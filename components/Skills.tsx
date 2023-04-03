@@ -21,7 +21,7 @@ export function Skills() {
             }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className="flex flex-col min-h-screen justify-center items-center px-4 md:px-6 xl:px-8 max-w-screen-2xl mx-auto"
+            className="flex flex-col h-[850px] justify-center items-center px-4 md:px-6 xl:px-8 max-w-screen-2xl mx-auto"
             >
             <h3 className="text-gray-500 text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider mb-6 md:mb-8">
                 Skills

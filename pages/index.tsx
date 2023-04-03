@@ -8,6 +8,7 @@ import { Skills } from '../components/Skills'
 import { Projects } from '../components/Projects'
 import { ContactMe } from '../components/ContactMe'
 
+import Image from 'next/image'
 import Link from 'next/link'
 
 const Home: NextPage = () => {
@@ -43,10 +44,11 @@ const Home: NextPage = () => {
       <Link href={"#hero"}>
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
-            <img 
+            <Image
               className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
               src="/profile/profile.jpeg" 
-              alt="" 
+              width={"40px"}
+              height={"40px"} 
             />
           </div>
         </footer>

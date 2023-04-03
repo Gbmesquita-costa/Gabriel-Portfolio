@@ -26,7 +26,7 @@ export function Projects() {
             transition={{ duration: 1.5 }}
             className='relative flex flex-col items-center justify-center md:flex-row max-w-full mx-auto h-screen z-0'
         >
-            <h3 className='absolute top-24 text-2xl tracking-widest uppercase text-gray-500'>
+            <h3 className='absolute top-16 text-2xl tracking-widest uppercase text-gray-500'>
                 Projetos reais
             </h3>
 

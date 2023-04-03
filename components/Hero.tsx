@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
+
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { BackgroundCircles } from './BackgroundCircles'
+
+import Image from 'next/image'
 
 type Props = {}
 
@@ -19,7 +22,7 @@ export function Hero({ }: Props) {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles/>
-            <img className='relative rounded-full w-40 h-40 mx-auto object-cover' src="/profile/profile.jpeg" alt="profile" />
+            <Image className='relative rounded-full w-40 h-40 mx-auto object-cover'src="/profile/profile.jpeg" alt="profile" width={"160px"} height={"160px"}/>
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
                     Engenheiro de software
