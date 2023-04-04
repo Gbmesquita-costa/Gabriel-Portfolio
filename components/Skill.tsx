@@ -3,9 +3,10 @@ import { motion } from 'framer-motion'
 
 type Props = {
     skillImage: string;
+    level: string
 }
 
-export function Skill ({ skillImage }: Props) {
+export function Skill ({ skillImage, level }: Props) {
   return (
     <div className='group relative flex cursor-pointer'>
         <motion.img 
@@ -23,7 +24,7 @@ export function Skill ({ skillImage }: Props) {
         rounded-full z-0'>
             <div className='flex items-center justify-center h-full'>
                 <p className='text-3xl font-bold text-black opacity-100'>
-                    100%
+                    {level}
                 </p>
             </div>
         </div>

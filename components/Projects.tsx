@@ -24,15 +24,15 @@ export function Projects() {
             }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='relative flex flex-col items-center justify-center md:flex-row max-w-full mx-auto h-screen z-0'
+            className='relative flex flex-col items-center xl:flex-row justify-center lg:flex-row max-w-full mx-auto h-screen z-0'
         >
-            <h3 className='absolute top-16 text-2xl tracking-widest uppercase text-gray-500'>
+            <h3 className='absolute xl:top-16 top-16 lg:top-5 text-2xl tracking-widest uppercase text-gray-500'>
                 Projetos reais
             </h3>
 
-            <div className='relative flex flex-col md:flex-row w-full md:w-auto h-full md:h-auto overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+            <div className='xs:flex-row s:flex-row xl:mt-0 md:mt-8 md:flex-row relative flex flex-col xl:flex-row lg:flex-row w-full lg:w-auto h-full lg:h-auto overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
                 {projects.map((project, i) => (
-                    <div key={i} className='w-full md:w-screen flex-shrink-0 snap-center flex flex-col justify-center items-center md:p-44 p-20 h-screen'>
+                    <div key={i} className='w-full xs:w-[400px] lg:w-screen flex-shrink-0 snap-center flex flex-col justify-center items-center lg:p-44 p-20 h-screen'>
                         <motion.img
                             initial={{ opacity: 0 }}
                             transition={{ duration: 1.2 }}
@@ -40,16 +40,16 @@ export function Projects() {
                             viewport={{ once: true }}
                             src={project.image}
                             alt={project.title}
-                            className='w-3/4 md:w-3/4 h-auto md:h-3/4 object-contain'
+                            className='xs:w-3/4 w-2/4 md:w-3/4 xl:w-2/4 h-auto md:h-3/4 object-contain lg:w-[370px] lg:h-[370px]'
                         />
-                        <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+                        <div className='space-y-10 px-0 lg:px-10 max-w-6xl'>
                             <h4 className='text-4xl font-semibold text-center mt-7'>
                                 <span className='underline decoration-[#F7AB0A]/50'>
                                     {i + 1} of {projects.length}:
                                 </span>{" "}
                                 {project.title}
                             </h4>
-                            <p className='text-lg md:text-left text-center' dangerouslySetInnerHTML={{ __html: project.content }} />
+                            <p className='xl:text-lg xs:text-sm lg:text-[1rem] text-center' dangerouslySetInnerHTML={{ __html: project.content }} />
                         </div>
                     </div>
                 ))}
