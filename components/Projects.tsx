@@ -8,13 +8,17 @@ export function Projects() {
                 "Sou responsável pela criação e manutenção completa do e-commerce. As outras tarefas exigidas foram a criação da logo, dos banners, e do layout como um todo. Também tive que realizar a integração com o gateway de pagamento AppMax, aceitando basicamente todos os meios de pagamento possíveis, como o pix, cartão de crédito e boleto bancário. Link do site: <strong><a href='https://impetodg.com/'>https://impetodg.com</a></strong>"
         },
         {
-            id: 2, image: "/projects/cardier.png", title: "Cardier", content:
-                "Realizei a parte de otimização, de interação, e de responsividade na dashboard de estilização do cartão na aplicação. Na qual tive que criar um método de tipografia, para quando o usuário mudasse a fonte do texto manualmente, fosse possível mudar a fonte de cada componente separadamente, além de corrigir bugs na aplicação, como loopings infinitos e otimização do código. Link do site: <strong><a href='https://cardier.com.br'>https://cardier.com.br</a></strong>"
+            id: 2, image: "/projects/jd.png", title: "J.D. COSTA CONSTRUÇÕES", content:
+                "O projeto foi um portfólio de uma empresa de engenharia, desenvolvido utilizando tecnologias como Next.js, Prisma, MySQL e AWS S3 buckets para armazenar imagens. A plataforma foi criada com o objetivo de fornecer uma visão completa e detalhada dos projetos já realizados pela empresa, de forma clara e organizada. Apresentando um design moderno e responsivo, com um layout intuitivo e fácil de navegar, permitindo que os usuários encontrem facilmente informações sobre projetos específicos. Link do site: <strong><a href='https://jdcostacontrucoes.com/'>https://jdcostacontrucoes.com/</a></strong>"
         },
         {
             id: 3, image: "/projects/Totelfront.png", title: "Totel", content:
-                "Tive que Projetar e construir aplicativos avançados para a plataforma, colaborar com equipes multifuncionais para definir, projetar e enviar novos recursos. Trabalhar com fontes de dados externas e APIs, Código de teste de unidade para robustez, incluindo casos extremos, de usabilidade e confiabilidade."
+            "Tive que Projetar e construir aplicativos avançados para a plataforma, colaborar com equipes multifuncionais para definir, projetar e enviar novos recursos. Trabalhar com fontes de dados externas e APIs, Código de teste de unidade para robustez, incluindo casos extremos, de usabilidade e confiabilidade."
         },
+        {
+            id: 4, image: "/projects/cardier.png", title: "Cardier", content:
+                "Realizei a parte de otimização, de interação, e de responsividade na dashboard de estilização do cartão na aplicação. Na qual tive que criar um método de tipografia, para quando o usuário mudasse a fonte do texto manualmente, fosse possível mudar a fonte de cada componente separadamente, além de corrigir bugs na aplicação, como loopings infinitos e otimização do código. Link do site: <strong><a href='https://cardier.com.br'>https://cardier.com.br</a></strong>"
+        }
     ]
 
     return (

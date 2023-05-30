@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
+import type { NextPage, } from 'next'
 
 import { Header } from '../components/Header'
 import { Hero } from "../components/Hero"
@@ -13,47 +13,52 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+    <>
       <Head>
-        <title>Gabriel's Portfolio</title>
+          <link rel="shortcut icon" href="/profile/profile.jpeg" type="image/x-icon" />
       </Head>
 
-      <Header/>
+      <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
+      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+        <Head>
+          <title>Gabriel's Portfolio</title>
+        </Head>
 
-      <section id='hero' className='snap-center'>
-        <Hero/>
-      </section>
+        <Header />
 
-      <section id='about' className='snap-center'>
-        <About/>
-      </section>
+        <section id='hero' className='snap-center'>
+          <Hero />
+        </section>
 
-      <section id='skills' className='snap-start'>
-        <Skills/>
-      </section>
+        <section id='about' className='snap-center'>
+          <About />
+        </section>
 
-      <section id='projects' className='snap-start'>
-        <Projects/>
-      </section>
+        <section id='skills' className='snap-start'>
+          <Skills />
+        </section>
 
-      <section id='contact' className='snap-start'>
-        <ContactMe/>
-      </section>
+        <section id='projects' className='snap-start'>
+          <Projects />
+        </section>
+
+        <section id='contact' className='snap-start'>
+          <ContactMe />
+        </section>
+      </div>
 
       <Link href={"#hero"}>
-        <footer className='sticky bottom-5 w-full cursor-pointer'>
-          <div className='flex items-center justify-center'>
+        <footer className='fixed bottom-0 left-2 translate-[50%, 50%] ml-5 mb-14 cursor-pointer'>
             <Image
-              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
-              src="/profile/profile.jpeg" 
-              width={"40px"}
-              height={"40px"} 
+              className='rounded-full'
+              width={48}
+              height={47}
+              alt='up_image'
+              src={"/profile/profile.jpeg"}
             />
-          </div>
         </footer>
       </Link>
-    </div>
+    </>
   )
 }
 

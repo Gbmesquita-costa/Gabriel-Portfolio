@@ -25,7 +25,7 @@ export function About({}: Props) {
                 className='-mb-40 xs:w-[160px] xs:h-[160px] xs:mt-60 s:w-36 s:h-36 s:mt-12 xl:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover xl:rounded-lg lg:w-48 lg:h-48 lg:mt-32 md:mt-32 md:w-44 md:h-44 xl:w-[500px] xl:h-[600px]'
             />
 
-            <div className='s:pt-12 xs:pt-24 lg:pt-48 md:pt-28 lg:text-center space-y-10 px-2 xl:px-10 lg:px-10 xl:max-w-none lg:max-w-none mt-20 xl:mt-0 lg:mt-0'>
+            <div className='s:pt-12 xs:pt-24 lg:pt-38 md:pt-28 lg:text-center space-y-10 px-2 xl:px-10 lg:px-10 xl:max-w-none lg:max-w-none mt-20 xl:mt-0 lg:mt-0'>
                 <h4 className='xl:text-4xl xs:text-[1.2rem] font-semibold'>Um pouco <span className='underline decoration-[#bb4357]'>sobre</span> mim</h4>
 
                 <p className='text-lg xs:text-sm s:text-[1rem] xl:text-lg md:text-[1rem]'>
